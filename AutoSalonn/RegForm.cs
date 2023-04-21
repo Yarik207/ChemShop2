@@ -58,6 +58,8 @@ namespace  InternetShopofChemistryStuff
                 Close();
             }
             else MessageBox.Show("Куда мы лезем боже");
+
+            
         }
 
     private void RegForm_Load(object sender, EventArgs e)

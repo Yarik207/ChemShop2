@@ -59,6 +59,7 @@
             this.label1.Size = new System.Drawing.Size(187, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Введите логин";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // LoginTB
             // 
@@ -71,6 +72,7 @@
             // 
             this.PassTB.Location = new System.Drawing.Point(17, 163);
             this.PassTB.Name = "PassTB";
+            this.PassTB.PasswordChar = '*';
             this.PassTB.Size = new System.Drawing.Size(182, 22);
             this.PassTB.TabIndex = 3;
             this.PassTB.TextChanged += new System.EventHandler(this.PasstextBox_TextChanged);

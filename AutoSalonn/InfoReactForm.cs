@@ -25,10 +25,14 @@ namespace InternetShopofChemistryStuff
             PriceLabel.Text = chem.price.ToString();
             try
             {
-                pictureBox1.Load("../../Pictures/" + chem.name + ".bmp");
+                pictureBox1.Load("../../Pictures/" + chem.name + ".bmp");             
+            }
+            catch (Exception) { }
+            try
+            {
                 textBox1.Text = File.ReadAllText("../../Pictures/" + chem.name + ".txt");
             }
-            catch (Exception) { } 
+            catch (Exception) { }
 
         }
 
@@ -47,6 +51,11 @@ namespace InternetShopofChemistryStuff
             {
                 SelectedForm.MyReactive.Add(chem, 1);
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

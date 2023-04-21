@@ -60,7 +60,7 @@ namespace InternetShopofChemistryStuff
                 ReactivePanel.Controls.Add(reactive_list[i].pb);
 
                 x += 210;
-                if(x > 620)
+                if(x + 200 > ReactivePanel.Width)
                 {
                     x = 10;
                     y += 210;
@@ -108,7 +108,7 @@ namespace InternetShopofChemistryStuff
                     reactive_list[i].pb.Location = new Point(x, y);
 
                     x += 210;
-                    if (x > 620)
+                    if(x + 200 > ReactivePanel.Width)
                     {
                         x = 10;
                         y += 210;
@@ -149,6 +149,50 @@ namespace InternetShopofChemistryStuff
         private void ReactivePanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void priceTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void ReactivePanel_Resize(object sender, EventArgs e)
+        {
+            FindButton_Click(null, null);
+        }
+
+        private void FiltrPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void HideButton_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void HideButton_Click_1(object sender, EventArgs e)
+        {
+            if (HideButton.Text == "Скрыть панель ")
+            {
+                FiltrPanel.Height = HideButton.Height;
+                HideButton.Text = "Развернуть";
+            }
+            else if (HideButton.Text == "Развернуть")
+            {
+                FiltrPanel.Height = 140;
+                HideButton.Text = "Скрыть панель ";
+            }
         }
     }
 }

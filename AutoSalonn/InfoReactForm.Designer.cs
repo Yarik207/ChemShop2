@@ -41,10 +41,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label1.Location = new System.Drawing.Point(16, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 36);
+            this.label1.Size = new System.Drawing.Size(79, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
@@ -62,17 +62,18 @@
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(457, 22);
+            this.textBox1.Location = new System.Drawing.Point(457, 59);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(563, 645);
+            this.textBox1.Size = new System.Drawing.Size(563, 608);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // AddButton
             // 
             this.AddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.AddButton.Location = new System.Drawing.Point(276, 12);
+            this.AddButton.Location = new System.Drawing.Point(28, 413);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(160, 41);
             this.AddButton.TabIndex = 3;

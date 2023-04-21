@@ -42,6 +42,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.PriceTB = new System.Windows.Forms.TextBox();
+            this.InfoLabel = new System.Windows.Forms.Label();
+            this.richInfoTB = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             this.NameLabel.AutoSize = true;
             this.NameLabel.Location = new System.Drawing.Point(8, 85);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(87, 20);
+            this.NameLabel.Size = new System.Drawing.Size(104, 25);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Название ";
             // 
@@ -59,7 +61,7 @@
             this.TypeLabel.AutoSize = true;
             this.TypeLabel.Location = new System.Drawing.Point(7, 129);
             this.TypeLabel.Name = "TypeLabel";
-            this.TypeLabel.Size = new System.Drawing.Size(111, 20);
+            this.TypeLabel.Size = new System.Drawing.Size(137, 25);
             this.TypeLabel.TabIndex = 1;
             this.TypeLabel.Text = "Тип продукта";
             // 
@@ -68,7 +70,7 @@
             this.PriceLabel.AutoSize = true;
             this.PriceLabel.Location = new System.Drawing.Point(7, 169);
             this.PriceLabel.Name = "PriceLabel";
-            this.PriceLabel.Size = new System.Drawing.Size(85, 20);
+            this.PriceLabel.Size = new System.Drawing.Size(104, 25);
             this.PriceLabel.TabIndex = 3;
             this.PriceLabel.Text = "Цена, руб.";
             // 
@@ -76,13 +78,13 @@
             // 
             this.NameTB.Location = new System.Drawing.Point(230, 85);
             this.NameTB.Name = "NameTB";
-            this.NameTB.Size = new System.Drawing.Size(281, 26);
+            this.NameTB.Size = new System.Drawing.Size(281, 30);
             this.NameTB.TabIndex = 4;
             // 
             // SaveButton
             // 
             this.SaveButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.SaveButton.Location = new System.Drawing.Point(0, 415);
+            this.SaveButton.Location = new System.Drawing.Point(0, 830);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(565, 65);
             this.SaveButton.TabIndex = 8;
@@ -104,12 +106,12 @@
             "Оборудование"});
             this.TypeCB.Location = new System.Drawing.Point(230, 129);
             this.TypeCB.Name = "TypeCB";
-            this.TypeCB.Size = new System.Drawing.Size(280, 28);
+            this.TypeCB.Size = new System.Drawing.Size(280, 33);
             this.TypeCB.TabIndex = 10;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(232, 217);
+            this.pictureBox1.Location = new System.Drawing.Point(232, 250);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(277, 180);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,7 +120,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 217);
+            this.button1.Location = new System.Drawing.Point(12, 250);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 64);
             this.button1.TabIndex = 12;
@@ -138,7 +140,7 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(188, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 24);
+            this.label1.Size = new System.Drawing.Size(23, 29);
             this.label1.TabIndex = 13;
             this.label1.Text = "*";
             // 
@@ -149,7 +151,7 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(188, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 24);
+            this.label2.Size = new System.Drawing.Size(23, 29);
             this.label2.TabIndex = 14;
             this.label2.Text = "*";
             // 
@@ -160,7 +162,7 @@
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(187, 169);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 24);
+            this.label4.Size = new System.Drawing.Size(23, 29);
             this.label4.TabIndex = 16;
             this.label4.Text = "*";
             // 
@@ -169,7 +171,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(-5, 4);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 20);
+            this.label3.Size = new System.Drawing.Size(196, 25);
             this.label3.TabIndex = 18;
             this.label3.Text = "Добавление товара";
             // 
@@ -177,14 +179,34 @@
             // 
             this.PriceTB.Location = new System.Drawing.Point(230, 168);
             this.PriceTB.Name = "PriceTB";
-            this.PriceTB.Size = new System.Drawing.Size(281, 26);
+            this.PriceTB.Size = new System.Drawing.Size(281, 30);
             this.PriceTB.TabIndex = 19;
+            // 
+            // InfoLabel
+            // 
+            this.InfoLabel.AutoSize = true;
+            this.InfoLabel.Location = new System.Drawing.Point(7, 204);
+            this.InfoLabel.Name = "InfoLabel";
+            this.InfoLabel.Size = new System.Drawing.Size(144, 25);
+            this.InfoLabel.TabIndex = 20;
+            this.InfoLabel.Text = "Информация ";
+            // 
+            // richInfoTB
+            // 
+            this.richInfoTB.Location = new System.Drawing.Point(230, 200);
+            this.richInfoTB.Name = "richInfoTB";
+            this.richInfoTB.Size = new System.Drawing.Size(279, 44);
+            this.richInfoTB.TabIndex = 22;
+            this.richInfoTB.Text = "";
+            this.richInfoTB.TextChanged += new System.EventHandler(this.richInfoTB_TextChanged);
             // 
             // AddReactiveForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 480);
+            this.ClientSize = new System.Drawing.Size(565, 895);
+            this.Controls.Add(this.richInfoTB);
+            this.Controls.Add(this.InfoLabel);
             this.Controls.Add(this.PriceTB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -225,5 +247,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox PriceTB;
+        private System.Windows.Forms.Label InfoLabel;
+        private System.Windows.Forms.RichTextBox richInfoTB;
     }
 }

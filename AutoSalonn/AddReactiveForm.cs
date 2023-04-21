@@ -26,7 +26,7 @@ namespace InternetShopofChemistryStuff
                 return;
             }
 
-            if(NameTB.Text == "" || TypeCB.Text == "" || PriceTB.Text == "")
+            if(NameTB.Text == "" || TypeCB.Text == "" || PriceTB.Text == "" || richInfoTB.Text == "")
             {
                 MessageBox.Show("Поля с * обязательны к заполнению");
                 return;
@@ -43,6 +43,19 @@ namespace InternetShopofChemistryStuff
                 File.Copy(FileNme, "../../Pictures/" + NameTB.Text + ".bmp");
             }
 
+            string richInfoFile = "../../Pictures/" + NameTB.Text + ".txt";
+            File.AppendAllText(richInfoFile, richInfoTB.Text);
+                    
+            /*
+                        SaveFileDialog saveFile1 = new SaveFileDialog();
+                        saveFile1.DefaultExt = "*.txt";
+                        saveFile1.Filter = "|*.txt";
+
+                        if (saveFile1.ShowDialog() == DialogResult.OK && saveFile1.FileName.Length > 0)
+                        {
+                            richInfoTB.SaveFile(saveFile1.FileName, RichTextBoxStreamType.PlainText);
+                        }
+            */
             MessageBox.Show("Сохранено");
 
             Close();
@@ -65,6 +78,11 @@ namespace InternetShopofChemistryStuff
         }
 
         private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void richInfoTB_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -43,13 +43,21 @@ namespace InternetShopofChemistryStuff
                 File.Copy(FileNme, "../../Pictures/" + NameTB.Text + ".bmp");
             }
 
-            string richInfoFile = "../../Pictures/" + NameTB.Text + ".txt";
+        string richInfoFile = "../../Pictures/" + NameTB.Text + ".txt";
             File.AppendAllText(richInfoFile, richInfoTB.Text);
 
             MessageBox.Show("Сохранено");
 
             Close();
         }
+        /*
+        class Program
+        {
+            static void CatCreate(string[] args)
+            {
+                Directory.CreateDirectory("../../Pictures/"NameTB.Text);
+            }
+        } */
 
         string FileNme = "";
 

@@ -45,17 +45,7 @@ namespace InternetShopofChemistryStuff
 
             string richInfoFile = "../../Pictures/" + NameTB.Text + ".txt";
             File.AppendAllText(richInfoFile, richInfoTB.Text);
-                    
-            /*
-                        SaveFileDialog saveFile1 = new SaveFileDialog();
-                        saveFile1.DefaultExt = "*.txt";
-                        saveFile1.Filter = "|*.txt";
 
-                        if (saveFile1.ShowDialog() == DialogResult.OK && saveFile1.FileName.Length > 0)
-                        {
-                            richInfoTB.SaveFile(saveFile1.FileName, RichTextBoxStreamType.PlainText);
-                        }
-            */
             MessageBox.Show("Сохранено");
 
             Close();

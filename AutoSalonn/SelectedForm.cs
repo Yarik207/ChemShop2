@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoSalonn;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,7 @@ namespace InternetShopofChemistryStuff
         void ReDraw()
         {
             Controls.Clear();
+            Controls.Add(SendButton);
 
             int x = 10;
             int y = 10;
@@ -123,6 +125,12 @@ namespace InternetShopofChemistryStuff
         private void SelectedForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void SendButton_Click(object sender, EventArgs e)
+        {
+            SendMailForm smf = new SendMailForm();
+            smf.ShowDialog();
         }
     }
 }

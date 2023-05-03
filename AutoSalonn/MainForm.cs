@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using  InternetShopofChemistryStuff;
 using System.Security.Cryptography.X509Certificates;
+using AutoSalonn;
 
 namespace InternetShopofChemistryStuff
 {
@@ -110,6 +111,11 @@ namespace InternetShopofChemistryStuff
                 button1.Text = "Выйти";  
             }  
         }
-        
+
+        private void FeedBackButton_Click(object sender, EventArgs e)
+        {
+            FeedBackForm fbf = new FeedBackForm();
+            fbf.ShowDialog();
+        }
     }
 }

@@ -44,6 +44,7 @@
             this.удалитьТоварToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.UserLabel = new System.Windows.Forms.Label();
+            this.FeedBackButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -205,6 +206,20 @@
             this.UserLabel.TabIndex = 28;
             this.UserLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // FeedBackButton
+            // 
+            this.FeedBackButton.BackColor = System.Drawing.Color.Black;
+            this.FeedBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.FeedBackButton.ForeColor = System.Drawing.Color.White;
+            this.FeedBackButton.Location = new System.Drawing.Point(796, -1);
+            this.FeedBackButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FeedBackButton.Name = "FeedBackButton";
+            this.FeedBackButton.Size = new System.Drawing.Size(185, 52);
+            this.FeedBackButton.TabIndex = 29;
+            this.FeedBackButton.Text = "Обратная связь";
+            this.FeedBackButton.UseVisualStyleBackColor = false;
+            this.FeedBackButton.Click += new System.EventHandler(this.FeedBackButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -214,6 +229,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(981, 553);
             this.ContextMenuStrip = this.AddCarCcontextMenuStrip;
+            this.Controls.Add(this.FeedBackButton);
             this.Controls.Add(this.UserLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox6);
@@ -258,6 +274,7 @@
         private System.Windows.Forms.ToolStripMenuItem удалитьТоварToolStripMenuItem;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label UserLabel;
+        private System.Windows.Forms.Button FeedBackButton;
     }
 }
 

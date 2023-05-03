@@ -84,9 +84,9 @@
             // SaveButton
             // 
             this.SaveButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.SaveButton.Location = new System.Drawing.Point(0, 830);
+            this.SaveButton.Location = new System.Drawing.Point(0, 538);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(565, 65);
+            this.SaveButton.Size = new System.Drawing.Size(936, 65);
             this.SaveButton.TabIndex = 8;
             this.SaveButton.Text = "Сохранить";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(232, 250);
+            this.pictureBox1.Location = new System.Drawing.Point(230, 204);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(277, 180);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -120,7 +120,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 250);
+            this.button1.Location = new System.Drawing.Point(10, 204);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 64);
             this.button1.TabIndex = 12;
@@ -185,7 +185,7 @@
             // InfoLabel
             // 
             this.InfoLabel.AutoSize = true;
-            this.InfoLabel.Location = new System.Drawing.Point(7, 204);
+            this.InfoLabel.Location = new System.Drawing.Point(517, 85);
             this.InfoLabel.Name = "InfoLabel";
             this.InfoLabel.Size = new System.Drawing.Size(144, 25);
             this.InfoLabel.TabIndex = 20;
@@ -193,9 +193,9 @@
             // 
             // richInfoTB
             // 
-            this.richInfoTB.Location = new System.Drawing.Point(230, 200);
+            this.richInfoTB.Location = new System.Drawing.Point(522, 126);
             this.richInfoTB.Name = "richInfoTB";
-            this.richInfoTB.Size = new System.Drawing.Size(279, 44);
+            this.richInfoTB.Size = new System.Drawing.Size(402, 314);
             this.richInfoTB.TabIndex = 22;
             this.richInfoTB.Text = "";
             this.richInfoTB.TextChanged += new System.EventHandler(this.richInfoTB_TextChanged);
@@ -204,7 +204,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 895);
+            this.ClientSize = new System.Drawing.Size(936, 603);
             this.Controls.Add(this.richInfoTB);
             this.Controls.Add(this.InfoLabel);
             this.Controls.Add(this.PriceTB);

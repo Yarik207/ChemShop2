@@ -9,7 +9,7 @@ namespace InternetShopofChemistryStuff
         public AddReactiveForm()
         {
             InitializeComponent();
-            Text = "Добавление товара";
+            Text = "Добавление товара"; 
         }
 
         private void AddReactiveForm_Load(object sender, EventArgs e)

@@ -53,13 +53,13 @@ namespace AutoSalonn
                     Message.Body = "Здравствуйте. " + Environment.NewLine + "Мы прислали вам, ваш список выбранных товаров.";
                     Message.IsBodyHtml = true;
 
-                    File.WriteAllText("Избранное.csv", "Название,Количество,Цена");
+                    File.WriteAllText("Избранное.csv", "Название;Цена;Количество");
                     foreach(KeyValuePair<Reactive, int> myReactive in SelectedForm.MyReactive)
                     {
                         Reactive chem = myReactive.Key;
                         File.AppendAllText("Избранное.csv",
                             Environment.NewLine +
-                           chem.name + "," + myReactive.Value + "," + chem.price);
+                           chem.name + ";" + chem.price + ";" + myReactive.Value);
                     }
                     Message.Attachments.Add(new Attachment("Избранное.csv"));
 

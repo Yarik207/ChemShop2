@@ -63,7 +63,7 @@ namespace AutoSalonn
                     }
                     Message.Attachments.Add(new Attachment("Избранное.csv"));
 
-                    smtpClient.Host = "smtp.mail.ru";
+                    smtpClient.Host = "smtp.mail.ru"; 
                     smtpClient.Port = 587;
                     smtpClient.EnableSsl = true;
                     smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;

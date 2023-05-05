@@ -21,6 +21,10 @@ namespace InternetShopofChemistryStuff
         {
             InitializeComponent();
         }
+        private void Draw()
+        {
+            FiltrButton.Location = new Point(this.Size.Width/2 - );
+        }
 
         private void HelpButton_Click(object sender, EventArgs e)
         {

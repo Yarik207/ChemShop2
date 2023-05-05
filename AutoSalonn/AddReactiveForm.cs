@@ -4,12 +4,32 @@ using System.Windows.Forms;
 
 namespace InternetShopofChemistryStuff
 {
+
+
+    /*
+       *   G:\ChemShop\AutoSalonn\Pictures
+          string path = @"C:\SomeDir";
+          string subpath = @"program\avalon";
+          DirectoryInfo dirInfo = new DirectoryInfo(path);
+          if (!dirInfo.Exists)
+          {
+              dirInfo.Create();
+          }
+          dirInfo.CreateSubdirectory(subpath);
+       * 
+      class Program
+      {
+          static void CatCreate(string[] args)
+          {
+              Directory.CreateDirectory("../../Pictures/"NameTB.Text);
+          }
+      } */
     public partial class AddReactiveForm : Form
     {
         public AddReactiveForm()
         {
             InitializeComponent();
-            Text = "Добавление товара";  
+            Text = "Добавление товара";
         }
 
         private void AddReactiveForm_Load(object sender, EventArgs e)
@@ -46,18 +66,11 @@ namespace InternetShopofChemistryStuff
         string richInfoFile = "../../Pictures/" + NameTB.Text + ".txt";
             File.AppendAllText(richInfoFile, richInfoTB.Text);
 
-            MessageBox.Show("Сохранено");
+      MessageBox.Show("Сохранено");
 
             Close();
         }
-        /*
-        class Program
-        {
-            static void CatCreate(string[] args)
-            {
-                Directory.CreateDirectory("../../Pictures/"NameTB.Text);
-            }
-        } */
+      
 
         string FileNme = "";
 

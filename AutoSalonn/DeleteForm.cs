@@ -26,7 +26,7 @@ namespace  InternetShopofChemistryStuff
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-         var result = MessageBox.Show("Подумай и скажи это еще раз", "Удаление объекта", MessageBoxButtons.YesNo);
+         var result = MessageBox.Show("Вы уверены?", "Удаление объекта", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 File.Delete("Reactive.txt");

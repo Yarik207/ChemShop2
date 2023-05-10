@@ -4,26 +4,6 @@ using System.Windows.Forms;
 
 namespace InternetShopofChemistryStuff
 {
-
-
-    /*
-       *   G:\ChemShop\AutoSalonn\Pictures
-          string path = @"C:\SomeDir";
-          string subpath = @"program\avalon";
-          DirectoryInfo dirInfo = new DirectoryInfo(path);
-          if (!dirInfo.Exists)
-          {
-              dirInfo.Create();
-          }
-          dirInfo.CreateSubdirectory(subpath);
-       * 
-      class Program
-      {
-          static void CatCreate(string[] args)
-          {
-              Directory.CreateDirectory("../../Pictures/"NameTB.Text);
-          }
-      } */
     public partial class AddReactiveForm : Form
     {
         public AddReactiveForm()

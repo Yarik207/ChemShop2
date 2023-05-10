@@ -30,7 +30,7 @@ namespace  InternetShopofChemistryStuff
             if (NameTB.Text == "" || FamilTB.Text == "" 
                 || LoginTB.Text == "" || PassTB.Text == "" || SecondPassTB.Text == "")
             {
-                MessageBox.Show("Куда мы лезем боже");
+                MessageBox.Show("Поля не заполнены");
             }
             else
             if (NameTB.Text == "BetaTestUser123321" && PassTB.Text == "qwerty")
@@ -41,7 +41,7 @@ namespace  InternetShopofChemistryStuff
                                LoginTB.Text + ", " +
                                PassTB.Text + ", 1" +
                                Environment.NewLine);
-                MessageBox.Show("О!! Свой человек");
+                MessageBox.Show("Вы зарегистрированы");
                 Close();
             }
            else
@@ -54,10 +54,10 @@ namespace  InternetShopofChemistryStuff
                                 LoginTB.Text + ", " +
                                 PassTB.Text + ", 0" +
                                 Environment.NewLine);
-                MessageBox.Show("О!! Свой человек");
+                MessageBox.Show("Вы зарегистрированы");
                 Close();
             }
-            else MessageBox.Show("Куда мы лезем боже");
+            else MessageBox.Show("Пароль неверен");
 
             
         }

@@ -56,35 +56,38 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(107, 331);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 269);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(717, 320);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(538, 260);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 138);
+            this.pictureBox2.Size = new System.Drawing.Size(150, 112);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
             // HelpButton
             // 
+            this.HelpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.HelpButton.BackColor = System.Drawing.Color.Black;
             this.HelpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HelpButton.ForeColor = System.Drawing.Color.White;
-            this.HelpButton.Location = new System.Drawing.Point(517, 267);
-            this.HelpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HelpButton.Location = new System.Drawing.Point(388, 217);
+            this.HelpButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HelpButton.Name = "HelpButton";
-            this.HelpButton.Size = new System.Drawing.Size(149, 62);
+            this.HelpButton.Size = new System.Drawing.Size(112, 50);
             this.HelpButton.TabIndex = 8;
             this.HelpButton.Text = "Помощь";
             this.HelpButton.UseVisualStyleBackColor = false;
@@ -92,35 +95,40 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(407, 419);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(305, 340);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(200, 134);
+            this.pictureBox4.Size = new System.Drawing.Size(150, 109);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(384, -1);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(288, -1);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(200, 150);
+            this.pictureBox5.Size = new System.Drawing.Size(150, 122);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
             // 
             // FiltrButton
             // 
+            this.FiltrButton.AllowDrop = true;
+            this.FiltrButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FiltrButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.FiltrButton.CausesValidation = false;
             this.FiltrButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FiltrButton.ForeColor = System.Drawing.Color.White;
-            this.FiltrButton.Location = new System.Drawing.Point(313, 199);
-            this.FiltrButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FiltrButton.Location = new System.Drawing.Point(235, 162);
+            this.FiltrButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FiltrButton.Name = "FiltrButton";
-            this.FiltrButton.Size = new System.Drawing.Size(353, 64);
+            this.FiltrButton.Size = new System.Drawing.Size(265, 52);
             this.FiltrButton.TabIndex = 15;
             this.FiltrButton.Text = "Выбери товар";
             this.FiltrButton.UseVisualStyleBackColor = false;
@@ -128,13 +136,14 @@
             // 
             // SelectedButton
             // 
+            this.SelectedButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SelectedButton.BackColor = System.Drawing.Color.Black;
             this.SelectedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.SelectedButton.ForeColor = System.Drawing.Color.White;
-            this.SelectedButton.Location = new System.Drawing.Point(313, 267);
-            this.SelectedButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SelectedButton.Location = new System.Drawing.Point(235, 217);
+            this.SelectedButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SelectedButton.Name = "SelectedButton";
-            this.SelectedButton.Size = new System.Drawing.Size(189, 62);
+            this.SelectedButton.Size = new System.Drawing.Size(142, 50);
             this.SelectedButton.TabIndex = 24;
             this.SelectedButton.Text = "Избранное";
             this.SelectedButton.UseVisualStyleBackColor = false;
@@ -142,22 +151,24 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(707, 55);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(530, 45);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 150);
+            this.pictureBox3.Size = new System.Drawing.Size(150, 122);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 25;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(107, 55);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Location = new System.Drawing.Point(80, 45);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(200, 140);
+            this.pictureBox6.Size = new System.Drawing.Size(150, 114);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 26;
             this.pictureBox6.TabStop = false;
@@ -169,28 +180,30 @@
             this.добавитьТоварыToolStripMenuItem,
             this.удалитьТоварToolStripMenuItem});
             this.AddCarCcontextMenuStrip.Name = "AddCarCcontextMenuStrip";
-            this.AddCarCcontextMenuStrip.Size = new System.Drawing.Size(190, 52);
+            this.AddCarCcontextMenuStrip.Size = new System.Drawing.Size(161, 48);
             // 
             // добавитьТоварыToolStripMenuItem
             // 
             this.добавитьТоварыToolStripMenuItem.Name = "добавитьТоварыToolStripMenuItem";
-            this.добавитьТоварыToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
+            this.добавитьТоварыToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.добавитьТоварыToolStripMenuItem.Text = "Добавить товар";
             this.добавитьТоварыToolStripMenuItem.Click += new System.EventHandler(this.добавитьТоварыToolStripMenuItem_Click);
             // 
             // удалитьТоварToolStripMenuItem
             // 
             this.удалитьТоварToolStripMenuItem.Name = "удалитьТоварToolStripMenuItem";
-            this.удалитьТоварToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
+            this.удалитьТоварToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.удалитьТоварToolStripMenuItem.Text = "Удалить товар";
             this.удалитьТоварToolStripMenuItem.Click += new System.EventHandler(this.удалитьТоварToolStripMenuItem_Click_1);
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.button1.Location = new System.Drawing.Point(407, 364);
+            this.button1.Location = new System.Drawing.Point(305, 296);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 38);
+            this.button1.Size = new System.Drawing.Size(142, 31);
             this.button1.TabIndex = 27;
             this.button1.Text = "Войти";
             this.button1.UseVisualStyleBackColor = true;
@@ -200,21 +213,23 @@
             // 
             this.UserLabel.AutoSize = true;
             this.UserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.UserLabel.Location = new System.Drawing.Point(313, 150);
+            this.UserLabel.Location = new System.Drawing.Point(235, 122);
+            this.UserLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UserLabel.Name = "UserLabel";
-            this.UserLabel.Size = new System.Drawing.Size(0, 29);
+            this.UserLabel.Size = new System.Drawing.Size(0, 24);
             this.UserLabel.TabIndex = 28;
             this.UserLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FeedBackButton
             // 
+            this.FeedBackButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FeedBackButton.BackColor = System.Drawing.Color.Black;
             this.FeedBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.FeedBackButton.ForeColor = System.Drawing.Color.White;
-            this.FeedBackButton.Location = new System.Drawing.Point(796, -1);
-            this.FeedBackButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FeedBackButton.Location = new System.Drawing.Point(597, -1);
+            this.FeedBackButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FeedBackButton.Name = "FeedBackButton";
-            this.FeedBackButton.Size = new System.Drawing.Size(185, 52);
+            this.FeedBackButton.Size = new System.Drawing.Size(139, 42);
             this.FeedBackButton.TabIndex = 29;
             this.FeedBackButton.Text = "Обратная связь";
             this.FeedBackButton.UseVisualStyleBackColor = false;
@@ -222,12 +237,12 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(981, 553);
+            this.ClientSize = new System.Drawing.Size(736, 449);
             this.ContextMenuStrip = this.AddCarCcontextMenuStrip;
             this.Controls.Add(this.FeedBackButton);
             this.Controls.Add(this.UserLabel);
@@ -241,7 +256,7 @@
             this.Controls.Add(this.HelpButton);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная";

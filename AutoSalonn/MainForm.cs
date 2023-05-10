@@ -23,14 +23,18 @@ namespace InternetShopofChemistryStuff
         }
         private void Draw()
         {
-            FiltrButton.Location = new Point(this.Size.Width/2 - );
+            FiltrButton.Location = new Point(this.Size.Width/2 - FiltrButton.Size.Width/2, FiltrButton.Location.Y);
+            SelectedButton.Location = new Point(FiltrButton.Location.X , SelectedButton.Location.Y);
+            HelpButton.Location = new Point(FiltrButton.Location.X + FiltrButton.Size.Width - HelpButton.Size.Width + HelpButton.Location.Y);
+            button1.Location = new Point(this.Size.Width / 2 - button1.Size.Width / 2, button1.Location.Y);
+            pictureBox1.Location = new Point(107,331);
         }
 
         private void HelpButton_Click(object sender, EventArgs e)
         {
             HelpForm hf = new HelpForm();
             hf.ShowDialog();
-        }
+        }   
 
         private void FiltrButton_Click(object sender, EventArgs e)
         {

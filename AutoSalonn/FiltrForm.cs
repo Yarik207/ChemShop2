@@ -94,13 +94,22 @@ namespace InternetShopofChemistryStuff
                     reactive_list[i].btn.Visible = false;
                     reactive_list[i].pb.Visible = false;
                 }
-               
-                if (priceTextBox.Text != "" &&
-                    Convert.ToInt32(priceTextBox.Text) <= reactive_list[i].price)
+                #region Price
+                if (MinPriceTextBox.Text != "" &&
+                    Convert.ToInt32(MinPriceTextBox.Text) >= reactive_list[i].price)
                 {
                     reactive_list[i].btn.Visible = false;
                     reactive_list[i].pb.Visible = false;
+
                 }
+                if (MaxPriceTextBox.Text != "" &&
+                   Convert.ToInt32(MaxPriceTextBox.Text) <= reactive_list[i].price)
+                {
+                    reactive_list[i].btn.Visible = false;
+                    reactive_list[i].pb.Visible = false;
+
+                }
+                #endregion
 
                 if (reactive_list[i].btn.Visible)
                 {

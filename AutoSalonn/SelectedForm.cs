@@ -14,7 +14,7 @@ namespace InternetShopofChemistryStuff
     public partial class SelectedForm : Form
     {
         public static Dictionary<Reactive, int> MyReactive = new Dictionary<Reactive, int>();
-
+        int TotalPrice = 0;
         public SelectedForm()
         {
             InitializeComponent();
@@ -82,6 +82,8 @@ namespace InternetShopofChemistryStuff
                 btn.Size = new Size(200, 30);
                 btn.Click += new EventHandler(FiltrForm.ChemClick);
                 Controls.Add(btn);
+
+
                 #endregion
 
                 #region 4 столбец
@@ -96,8 +98,14 @@ namespace InternetShopofChemistryStuff
 
                 y += 210;
 
-            }
-
+                TotalPrice += (chem.price * myReactive.Value);
+                }
+            Label lbl_totalprice = new Label();
+            lbl_totalprice.Text = "Общая стоимость, руб.: " + TotalPrice.ToString();
+            lbl_totalprice.Font = new Font("Microsoft Sans Serif", 12F);
+            lbl_totalprice.Location = new Point(x + 440, y + 200 + AutoScrollPosition.Y);
+            lbl_totalprice.Size = new Size(400, 30);
+            Controls.Add(lbl_totalprice);
         }
 
         void DeleteClick(object sender, EventArgs e)

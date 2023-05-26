@@ -159,6 +159,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "RegForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegForm";
             this.Load += new System.EventHandler(this.RegForm_Load);
             this.ResumeLayout(false);

@@ -11,6 +11,7 @@ namespace InternetShopofChemistryStuff
             InitializeComponent();
             Text = "Добавление товара";
         }
+       
 
         private void AddReactiveForm_Load(object sender, EventArgs e)
         {
@@ -26,7 +27,7 @@ namespace InternetShopofChemistryStuff
                 return;
             }
 
-            if(NameTB.Text == "" || TypeCB.Text == "" || PriceTB.Text == "" || richInfoTB.Text == "")
+            if(NameTB.Text == "" || TypeCB.Text == "" || PriceTB.Text == "" || InfoTB.Text == "")
             {
                 MessageBox.Show("Поля с * обязательны к заполнению");
                 return;
@@ -44,10 +45,9 @@ namespace InternetShopofChemistryStuff
             }
 
         string richInfoFile = "../../Pictures/" + NameTB.Text + ".txt";
-            File.AppendAllText(richInfoFile, richInfoTB.Text);
+            File.AppendAllText(richInfoFile, InfoTB.Text);
 
       MessageBox.Show("Сохранено");
-
             Close();
         }
       

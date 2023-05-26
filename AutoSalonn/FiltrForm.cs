@@ -96,7 +96,7 @@ namespace InternetShopofChemistryStuff
                 }
                
                 if (priceTextBox.Text != "" &&
-                    Convert.ToInt32(priceTextBox.Text) < reactive_list[i].price)
+                    Convert.ToInt32(priceTextBox.Text) <= reactive_list[i].price)
                 {
                     reactive_list[i].btn.Visible = false;
                     reactive_list[i].pb.Visible = false;

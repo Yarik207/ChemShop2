@@ -68,7 +68,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(563, 608);
             this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            //this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // AddButton
             // 
@@ -124,6 +124,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "InfoReactForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CarForm";
             this.Load += new System.EventHandler(this.InfoReactForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

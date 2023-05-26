@@ -28,11 +28,11 @@ namespace InternetShopofChemistryStuff
                 pictureBox1.Load("../../Pictures/" + chem.name + ".bmp");             
             }
             catch (Exception) { }
-            try
+            //try
             {
                 textBox1.Text = File.ReadAllText("../../Pictures/" + chem.name + ".txt");
             }
-            catch (Exception) { }
+            //catch (Exception) { }
 
         }
 

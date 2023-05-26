@@ -20,14 +20,21 @@ namespace InternetShopofChemistryStuff
         public MainForm()
         {
             InitializeComponent();
+            Draw();
         }
         private void Draw()
         {
             FiltrButton.Location = new Point(this.Size.Width/2 - FiltrButton.Size.Width/2, FiltrButton.Location.Y);
             SelectedButton.Location = new Point(FiltrButton.Location.X , SelectedButton.Location.Y);
-            HelpButton.Location = new Point(FiltrButton.Location.X + FiltrButton.Size.Width - HelpButton.Size.Width + HelpButton.Location.Y);
+            HelpButton.Location = new Point(FiltrButton.Location.X + FiltrButton.Size.Width - HelpButton.Size.Width, HelpButton.Location.Y);
             button1.Location = new Point(this.Size.Width / 2 - button1.Size.Width / 2, button1.Location.Y);
-            pictureBox1.Location = new Point(107,331);
+            pictureBox1.Location = new Point(FiltrButton.Location.X - (pictureBox1.Size.Width + 50), pictureBox1.Location.Y);
+            pictureBox6.Location = new Point(FiltrButton.Location.X - (pictureBox6.Size.Width + 50), pictureBox6.Location.Y);
+            pictureBox2.Location = new Point(FiltrButton.Location.X + FiltrButton.Size.Width + 50, pictureBox2.Location.Y);
+            pictureBox3.Location = new Point(FiltrButton.Location.X + FiltrButton.Size.Width + 50, pictureBox3.Location.Y);
+            pictureBox5.Location = new Point(FiltrButton.Location.X + 60, pictureBox5.Location.Y);
+            pictureBox4.Location = new Point(FiltrButton.Location.X + 60, pictureBox4.Location.Y);
+            UserLabel.Location = new Point(FiltrButton.Location.X , UserLabel.Location.Y);
         }
 
         private void HelpButton_Click(object sender, EventArgs e)
@@ -124,6 +131,10 @@ namespace InternetShopofChemistryStuff
         {
             FeedBackForm fbf = new FeedBackForm();
             fbf.ShowDialog();
+        }
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            Draw();
         }
     }
 }

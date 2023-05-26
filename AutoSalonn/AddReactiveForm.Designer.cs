@@ -43,7 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.PriceTB = new System.Windows.Forms.TextBox();
             this.InfoLabel = new System.Windows.Forms.Label();
-            this.richInfoTB = new System.Windows.Forms.RichTextBox();
+            this.InfoTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -191,21 +191,20 @@
             this.InfoLabel.TabIndex = 20;
             this.InfoLabel.Text = "Информация ";
             // 
-            // richInfoTB
+            // InfoTB
             // 
-            this.richInfoTB.Location = new System.Drawing.Point(522, 126);
-            this.richInfoTB.Name = "richInfoTB";
-            this.richInfoTB.Size = new System.Drawing.Size(402, 314);
-            this.richInfoTB.TabIndex = 22;
-            this.richInfoTB.Text = "";
-            this.richInfoTB.TextChanged += new System.EventHandler(this.richInfoTB_TextChanged);
+            this.InfoTB.Location = new System.Drawing.Point(517, 114);
+            this.InfoTB.Multiline = true;
+            this.InfoTB.Name = "InfoTB";
+            this.InfoTB.Size = new System.Drawing.Size(407, 328);
+            this.InfoTB.TabIndex = 21;
             // 
-            // AddReactiveForm
+            // In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 603);
-            this.Controls.Add(this.richInfoTB);
+            this.Controls.Add(this.InfoTB);
             this.Controls.Add(this.InfoLabel);
             this.Controls.Add(this.PriceTB);
             this.Controls.Add(this.label3);
@@ -222,7 +221,8 @@
             this.Controls.Add(this.NameLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "AddReactiveForm";
+            this.Name = "In";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Форма добавления товара";
             this.Load += new System.EventHandler(this.AddReactiveForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -248,6 +248,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox PriceTB;
         private System.Windows.Forms.Label InfoLabel;
-        private System.Windows.Forms.RichTextBox richInfoTB;
+        private System.Windows.Forms.TextBox InfoTB;
     }
 }

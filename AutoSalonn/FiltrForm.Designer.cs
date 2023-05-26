@@ -180,6 +180,7 @@
             this.Controls.Add(this.FiltrPanel);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FiltrForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Выбери товар";
             this.Load += new System.EventHandler(this.FiltrForm_Load);
             this.FiltrPanel.ResumeLayout(false);

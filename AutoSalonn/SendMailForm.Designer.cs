@@ -72,8 +72,9 @@
             this.Controls.Add(this.SendButton);
             this.Controls.Add(this.AdressTB);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SendMailForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Отправка на почту ";
             this.Load += new System.EventHandler(this.SendMailForm_Load);
             this.ResumeLayout(false);

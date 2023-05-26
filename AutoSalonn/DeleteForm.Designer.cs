@@ -82,6 +82,7 @@
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.textBox1);
             this.Name = "DeleteForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Форма добаления товара";
             this.Load += new System.EventHandler(this.DeleteForm_Load);
             this.ResumeLayout(false);

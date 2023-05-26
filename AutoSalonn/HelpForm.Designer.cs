@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HelpForm));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -50,9 +51,9 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(365, 270);
+            this.textBox1.Size = new System.Drawing.Size(600, 500);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Лучший из лучших химических магазинов \r\nМИРА!!!\r\nУолтер Вайт одобряет ";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -60,11 +61,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 584);
+            this.ClientSize = new System.Drawing.Size(931, 584);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "HelpForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Справка";
             this.Load += new System.EventHandler(this.HelpForm_Load);
             this.ResumeLayout(false);

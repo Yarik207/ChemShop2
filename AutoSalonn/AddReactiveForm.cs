@@ -12,7 +12,6 @@ namespace InternetShopofChemistryStuff
             Text = "Добавление товара";
         }
        
-
         private void AddReactiveForm_Load(object sender, EventArgs e)
         {
 
@@ -51,7 +50,6 @@ namespace InternetShopofChemistryStuff
             Close();
         }
       
-
         string FileNme = "";  
 
         private void button1_Click(object sender, EventArgs e)
